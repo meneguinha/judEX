@@ -23,42 +23,42 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 
 html, body, [class*="css"] {
-    font-family: 'Syne', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 /* Fundo geral */
 .stApp {
-    background-color: #0d0f14;
-    color: #e8e6e1;
+    background-color: #f5f4f0;
+    color: #1a1a2e;
 }
 
 /* Sidebar */
 [data-testid="stSidebar"] {
-    background-color: #111318;
-    border-right: 1px solid #1e2028;
+    background-color: #ffffff;
+    border-right: 1px solid #e2e0db;
 }
 
 [data-testid="stSidebar"] * {
-    color: #e8e6e1 !important;
+    color: #1a1a2e !important;
 }
 
 /* Título principal */
 .titulo-principal {
     font-size: 2.8rem;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -0.03em;
     line-height: 1.1;
-    color: #f0ede8;
+    color: #1a1a2e;
     margin-bottom: 0.2rem;
 }
 
 .titulo-sub {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    color: #c9a84c;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: #1a5276;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-bottom: 2rem;
@@ -66,38 +66,38 @@ html, body, [class*="css"] {
 
 /* Cards de métricas */
 .metric-card {
-    background: #16181f;
-    border: 1px solid #1e2028;
+    background: #ffffff;
+    border: 1px solid #e2e0db;
     border-radius: 8px;
     padding: 1.2rem 1.5rem;
     margin-bottom: 0.8rem;
 }
 
 .metric-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.65rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.63rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #666a7a;
+    color: #888;
     margin-bottom: 0.3rem;
 }
 
 .metric-value {
     font-size: 2rem;
     font-weight: 700;
-    color: #c9a84c;
+    color: #1a5276;
     line-height: 1;
 }
 
 .metric-unit {
     font-size: 0.85rem;
-    color: #888;
+    color: #aaa;
     margin-left: 0.3rem;
 }
 
 /* Barra de progresso customizada */
 .progress-container {
-    background: #1e2028;
+    background: #e2e0db;
     border-radius: 4px;
     height: 6px;
     width: 100%;
@@ -106,7 +106,7 @@ html, body, [class*="css"] {
 }
 
 .progress-bar {
-    background: linear-gradient(90deg, #c9a84c, #e8c96a);
+    background: linear-gradient(90deg, #1a5276, #2980b9);
     height: 100%;
     border-radius: 4px;
     transition: width 0.3s ease;
@@ -114,21 +114,21 @@ html, body, [class*="css"] {
 
 /* Seção de resultado */
 .resultado-header {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #c9a84c;
-    border-bottom: 1px solid #1e2028;
+    color: #1a5276;
+    border-bottom: 1px solid #e2e0db;
     padding-bottom: 0.5rem;
     margin: 1.5rem 0 1rem 0;
 }
 
 /* Alerta de trânsito em julgado */
 .transito-card {
-    background: #16181f;
-    border: 1px solid #c9a84c44;
-    border-left: 3px solid #c9a84c;
+    background: #ffffff;
+    border: 1px solid #aed6f144;
+    border-left: 3px solid #1a5276;
     border-radius: 8px;
     padding: 1.2rem 1.5rem;
     margin: 1rem 0;
@@ -139,22 +139,22 @@ html, body, [class*="css"] {
 .stNumberInput > div > div > input,
 .stSelectbox > div > div,
 .stDateInput > div > div > input {
-    background-color: #16181f !important;
-    border: 1px solid #1e2028 !important;
-    color: #e8e6e1 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #e2e0db !important;
+    color: #1a1a2e !important;
     border-radius: 6px !important;
-    font-family: 'JetBrains Mono', monospace !important;
+    font-family: 'DM Mono', monospace !important;
 }
 
 /* Botão principal */
 .stButton > button {
-    background: #c9a84c !important;
-    color: #0d0f14 !important;
+    background: #1a5276 !important;
+    color: #ffffff !important;
     border: none !important;
-    font-family: 'Syne', sans-serif !important;
+    font-family: 'DM Sans', sans-serif !important;
     font-weight: 700 !important;
     font-size: 0.9rem !important;
-    letter-spacing: 0.05em !important;
+    letter-spacing: 0.03em !important;
     padding: 0.6rem 2rem !important;
     border-radius: 6px !important;
     width: 100% !important;
@@ -162,16 +162,16 @@ html, body, [class*="css"] {
 }
 
 .stButton > button:hover {
-    background: #e8c96a !important;
+    background: #2980b9 !important;
     transform: translateY(-1px) !important;
 }
 
 /* Botão de download */
 .stDownloadButton > button {
     background: transparent !important;
-    color: #c9a84c !important;
-    border: 1px solid #c9a84c !important;
-    font-family: 'Syne', sans-serif !important;
+    color: #1a5276 !important;
+    border: 1px solid #1a5276 !important;
+    font-family: 'DM Sans', sans-serif !important;
     font-weight: 600 !important;
     width: 100% !important;
     border-radius: 6px !important;
@@ -179,39 +179,39 @@ html, body, [class*="css"] {
 
 /* Divisor */
 hr {
-    border-color: #1e2028 !important;
+    border-color: #e2e0db !important;
     margin: 1.5rem 0 !important;
 }
 
 /* Tabela */
 .stDataFrame {
-    border: 1px solid #1e2028 !important;
+    border: 1px solid #e2e0db !important;
     border-radius: 8px !important;
 }
 
 /* Expander */
 .streamlit-expanderHeader {
-    background-color: #16181f !important;
-    border: 1px solid #1e2028 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #e2e0db !important;
     border-radius: 6px !important;
-    font-family: 'JetBrains Mono', monospace !important;
+    font-family: 'DM Mono', monospace !important;
     font-size: 0.8rem !important;
     color: #888 !important;
 }
 
 /* Label dos campos */
 label {
-    font-family: 'JetBrains Mono', monospace !important;
-    font-size: 0.72rem !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.70rem !important;
     letter-spacing: 0.08em !important;
     text-transform: uppercase !important;
-    color: #666a7a !important;
+    color: #888 !important;
 }
 
 /* Info/warning boxes */
 .stInfo, .stWarning, .stError, .stSuccess {
     border-radius: 6px !important;
-    font-family: 'JetBrains Mono', monospace !important;
+    font-family: 'DM Mono', monospace !important;
     font-size: 0.8rem !important;
 }
 
@@ -551,7 +551,7 @@ with st.sidebar:
     intervalo_calc, n_req_calc = calcular_intervalo(quantidade)
     tempo_est = n_req_calc * intervalo_calc
     st.markdown(
-        f"<div style='font-family:JetBrains Mono,monospace;font-size:0.7rem;color:#555;line-height:1.8'>"
+        f"<div style='font-family:DM Mono,monospace;font-size:0.7rem;color:#999;line-height:1.8'>"
         f"~{n_req_calc} requisições<br>"
         f"intervalo: {intervalo_calc}s<br>"
         f"tempo est.: ~{tempo_est:.0f}s"
@@ -568,7 +568,7 @@ col_main, col_side = st.columns([3, 1])
 with col_main:
     if not iniciar:
         st.markdown(
-            "<div style='color:#333;font-family:JetBrains Mono,monospace;font-size:0.8rem;"
+            "<div style='color:#aaa;font-family:DM Mono,monospace;font-size:0.8rem;"
             "margin-top:3rem;line-height:2'>Configure os parâmetros na barra lateral<br>"
             "e clique em Iniciar Extração.</div>",
             unsafe_allow_html=True,
@@ -636,7 +636,7 @@ with col_main:
 
             with st.expander("Ver informações do arquivo"):
                 st.markdown(
-                    f"<div style='font-family:JetBrains Mono,monospace;font-size:0.75rem;line-height:2;color:#888'>"
+                    f"<div style='font-family:DM Mono,monospace;font-size:0.75rem;line-height:2;color:#666'>"
                     f"Arquivo : {nome_csv}<br>"
                     f"Processos : {len(df)}<br>"
                     f"Colunas : {len(df.columns)}<br>"
