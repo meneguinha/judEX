@@ -2,17 +2,22 @@
 
 **Extração inteligente de dados do Poder Judiciário brasileiro**
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://judex-br.streamlit.app/)
+
 > Acesse e filtre processos judiciais de qualquer tribunal do Brasil diretamente da API pública do CNJ (DataJud), exporte em CSV e conecte ao Tableau ou Power BI em segundos.
 
 ---
 
-## O que é
+## 🚀 Acesse a Aplicação
+O app está hospedado e pronto para uso em:  
+👉 **[https://judex-br.streamlit.app/](https://judex-br.streamlit.app/)**
 
+---
+
+## O que é
 **judex** é uma aplicação web construída com [Streamlit](https://streamlit.io) que permite consultar e extrair metadados processuais da [API Pública do DataJud](https://datajud-wiki.cnj.jus.br/api-publica/), mantida pelo Conselho Nacional de Justiça (CNJ).
 
 Sem código. Sem terminal. Direto no navegador.
-
----
 
 ## Funcionalidades
 
